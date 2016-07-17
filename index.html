@@ -1,0 +1,357 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Pa Nàsia</title>
+<meta name="author" content="Pere Ayats">
+<meta name="description" content="Forn de pa artesà Pa Nàsia">
+<meta name="keywords" content="pa forn nàsia artesà llenya garrotxa olot bianya">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
+type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+$(function(){
+
+     $('a[href*=#]').click(function() {
+
+     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+         && location.hostname == this.hostname) {
+
+             var $target = $(this.hash);
+
+             $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+
+             if ($target.length) {
+
+                 var targetOffset = $target.offset().top;
+
+                 $('html,body').animate({scrollTop: targetOffset}, 1000);
+
+                 return false;
+
+            }
+
+       }
+
+   });
+
+});
+</script>
+    <script src="jquery-1.5.2.min.js" type="text/javascript"></script>
+<script src="jcarousellite_1.0.1c5.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+$(function() {
+	$("#slidebox").jCarouselLite({
+		vertical: false,
+		hoverPause:true,
+		btnPrev: ".previous",
+		btnNext: ".next",
+		visible: 1,
+		start: 0,
+		scroll: 1,
+		circular: true,
+		auto:1000,
+		speed:500,				
+		btnGo:
+		    [".1", ".2",
+		    ".3", ".4"],
+		
+		afterEnd: function(a, to, btnGo) {
+				if(btnGo.length <= to){
+					to = 0;
+				}
+				$(".thumbActive").removeClass("thumbActive");
+				$(btnGo[to]).addClass("thumbActive");
+		    }
+	});
+});
+</script>
+    
+    <link href='http://fonts.googleapis.com/css?family=Oxygen|Imprima|Rancho|Merienda One|Salsa|Bangers|Oleo+Script|Sans+serif' rel='stylesheet' type='text/css'>
+    
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    
+    <style type="text/css">
+  body {
+    color: #000;
+    background-image: url("fons.jpg"); }
+	
+	#wrapper {
+            width: 850px;
+            margin: 0 auto;
+			}
+			
+	#wrapper #cabecera {
+		float: left;
+		background: #fff;
+        -webkit-border-top-left-radius: 10px;
+        -webkit-border-top-right-radius: 10px;
+                    -moz-border-radius-topleft: 10px;
+                    -moz-border-radius-topright: 10px;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    border-radius: 10px 10px 10px 10px;
+		}
+		
+		#wrapper #cabecera #logo {
+		width: 250px;
+		float: left; 
+		padding: 10px 10px 10px 10px;
+		}
+		
+		#wrapper #cabecera #menu {
+			width: 550px;
+		float: left; 
+        padding: 16px 20px 0px 10px;
+		}
+  
+  #wrapper #cabecera #menu .navegacion {
+  text-align:center;
+                    margin:0px 20px 15px 0px;
+                    padding:4px 4px;
+                    width:450px;
+                    position:relative; 
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    border-radius: 10px;
+                    background-color:#dd7a0f;
+                    color:white!important;
+                    text-shadow:2px 2px 2px #000;
+                    -moz-box-shadow:0 0 0 0 #000;
+                    -webkit-box-shadow:0 0 0 0 #000;
+                    display:inline-block;
+                    font-size:17px;
+                    font-family: 'Imprima', cursive;
+                    -webkit-transition: all 100ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+                    -moz-transition: all 100ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+                    -ms-transition: all 100ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+                    -o-transition: all 100ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+                    transition: all 100ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+                    text-decoration:none;
+                    margin-right:4px;
+                    border:2px solid #f1cd05;
+                    }
+                    
+                #wrapper #cabecera #menu .navegacion:hover {
+                    text-align:center;
+                    margin:0px 20px 15px 0px;
+                    padding:4px 4px;
+                    width:450px;
+                    position:relative; 
+                    -webkit-border-radius: 1px;
+                    -moz-border-radius: 1px;
+                    border-radius: 1px;
+                    background-color:#f1cd05;
+                    color:white!important;
+                    text-shadow:2px 2px 2px #000;
+                    -moz-box-shadow:0 0 0 0 #000;
+                    -webkit-box-shadow:0 0 0 0 #000;
+                    display:inline-block;
+                    font-size:17px;
+                    font-family: 'Imprima', cursive;
+                    -webkit-transition: all 100ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+                    -moz-transition: all 100ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+                    -ms-transition: all 100ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+                    -o-transition: all 100ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+                    transition: all 100ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+                    text-decoration:none;
+                    margin-right:4px;
+                    border:2px solid #f1cd05;
+                    }
+                    
+                     #wrapper #cabecera #menu .navegacion:active {
+                    font-size:17px;
+                    position:relative;
+                    top:1px;
+                    } 
+					
+					
+					#post {
+					width: 850px;
+            		margin: 0 auto;
+		}
+		
+					#post #dins {
+					float: left;
+		background: #fff;
+        -webkit-border-top-left-radius: 10px;
+        -webkit-border-top-right-radius: 10px;
+                    -moz-border-radius-topleft: 10px;
+                    -moz-border-radius-topright: 10px;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                    border-radius: 10px 10px 10px 10px;
+					
+					}
+					
+					.text {
+						width: 830px;
+						float: left; 
+						padding: 10px 10px 10px 10px;
+						font-family: 'Imprima', cursive;
+text-align= justify;
+					}
+					
+					.navegacion2 {
+  text-align:center;
+                    margin:0px 20px 15px 0px;
+                    padding:4px 4px;
+                    width:70px;
+                    position:relative; 
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    border-radius: 10px;
+                    background-color:#dd7a0f;
+                    color:white!important;
+                    text-shadow:2px 2px 2px #000;
+                    -moz-box-shadow:0 0 0 0 #000;
+                    -webkit-box-shadow:0 0 0 0 #000;
+                    display:inline-block;
+                    font-size:17px;
+                    font-family: 'Imprima', cursive;
+                    -webkit-transition: all 100ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+                    -moz-transition: all 100ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+                    -ms-transition: all 100ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+                    -o-transition: all 100ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+                    transition: all 100ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+                    text-decoration:none;
+                    margin-right:4px;
+                    border:2px solid #f1cd05;
+                    }
+                    
+                .navegacion2:hover {
+                    text-align:center;
+                    margin:0px 20px 15px 0px;
+                    padding:4px 4px;
+                    width:70px;
+                    position:relative; 
+                    -webkit-border-radius: 1px;
+                    -moz-border-radius: 1px;
+                    border-radius: 1px;
+                    background-color:#f1cd05;
+                    color:white!important;
+                    text-shadow:2px 2px 2px #000;
+                    -moz-box-shadow:0 0 0 0 #000;
+                    -webkit-box-shadow:0 0 0 0 #000;
+                    display:inline-block;
+                    font-size:17px;
+                    font-family: 'Imprima', cursive;
+                    -webkit-transition: all 100ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+                    -moz-transition: all 100ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+                    -ms-transition: all 100ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+                    -o-transition: all 100ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+                    transition: all 100ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+                    text-decoration:none;
+                    margin-right:4px;
+                    border:2px solid #f1cd05;
+                    }
+                    
+                     .navegacion2:active {
+                    font-size:17px;
+                    position:relative;
+                    top:1px;
+                    } 
+		
+	
+  
+  #slidebox{position:relative; border:1px solid #ccc; margin:40px auto;overflow:hidden;}
+#slidebox, #slidebox ul {width:500px;height:375px;}
+#slidebox, #slidebox ul li{width:500px;height:375px;}
+#slidebox ul li{position:relative; left:0; background:#eee; float:left;list-style: none; padding:15px 28px;  font-family:Verdana, Geneva, sans-serif; font-size:13px;}
+#slidebox .next, #slidebox .previous{position:absolute; z-index:2; display:block; width:21px; height:21px;top:139px;}
+#slidebox .next{right:0; margin-right:10px; background:url(galeria/slidebox_next.png) no-repeat left top;}
+#slidebox .next:hover{background:url(galeria/slidebox_next_hover.png) no-repeat left top;}
+#slidebox .previous{margin-left:10px; background:url(galeria/slidebox_previous.png) no-repeat left top;}
+#slidebox .previous:hover{background:url(galeria/slidebox_previous_hover.png) no-repeat left top;}
+#slidebox .thumbs{position:absolute; z-index:2; bottom:10px; right:10px;}
+#slidebox .thumbs a{display:block; margin-left:5px; float:left; font-family:Verdana, Geneva, sans-serif; font-size:9px; text-decoration:none; padding:2px 4px; background:url(galeria/slidebox_thumb.png); color:#fff;}
+#slidebox .thumbs a:hover{background:#fff; color:#000;}
+#slidebox .thumbs .thumbActive{background:#fff; color:#000; display:block; margin-left:5px; float:left; font-family:Verdana, Geneva, sans-serif; font-size:9px; text-decoration:none; padding:2px 4px;}
+
+  </style>
+  
+</head>
+
+<body>
+<div id="wrapper">
+<center>
+<div id="cabecera"><div id="logo"><a href="/"><img src="cabecera.png" style="border-radius: 10px;"/></a></div>
+    <div id="menu">
+        <a href="#quisom" class="navegacion">Qui som?</a>
+        <a href="#situacio" class="navegacion">Situació</a>
+        <a href="#contacte" class="navegacion">Contacta'ns</a>
+        <a href="#galeria" class="navegacion">Galeria</a>
+    </div>
+    </div>
+    </center>
+    </div>
+    <pre>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </pre>
+    <br />
+    <div id="post">
+    <div id="dins">
+<center>
+    <div class="text"><p><h1>Benvingut al nostre lloc web</h1>
+    <br />Aquí trobaràs tot el que cal saber sobre el forn de pa artesà Pa Nàsia<br /><br /><img src="IMG_1212.JPG" width="280" height="210" style="border-radius: 10px;" /><br />
+    <br /></p></div></center>
+    <hr align="center" width="825" noshade size="3px" style="color: #dd7a0f" />
+    <div id="quisom"><div class="text"><p align="justify"><h1>● Qui som?</h1><br />Som una petita fleca situada a la comarca de La Garrotxa. Tot va començar un gener de 2007 quan l'Esteve i la Dolors van posar en marxa aquest negoci amb moltes ganes i il·lusió. I així ho han fet fins l'actualitat, intentant fer-ho millor diariament. <br />L'obrador amb més de 60 anys de història, on l'Esteve -amb l'ajuda d'en Miquel- fa el pa, està ubicat a la Vall de Bianya. En canvi, la botiga, on la Dolors ven els productes, està ubicada al centre d'Olot.<br /><br /><center><img src="IMG_1200.JPG" width="280" height="210" style="border-radius: 10px;" />&nbsp; &nbsp; &nbsp; &nbsp;<img src="IMG_1201.JPG" width="280" height="210" style="border-radius: 10px;" /></center><br /><br />Tenim una bona varietat de productes. Fem pa amb diferents blats (espelta, farro, kamut, integral...), bolleria... fins a un pastís de poma (Tatín) que venem esporàdicament.<br /><br /><br /><a href="#dins" style="font-size:14px;" class="navegacion2">Inici</a> <a href="#situacio" style="font-size:14px;" class="navegacion2">Situació</a> <a href="#contacte" style="font-size:14px;" class="navegacion2">Contacta'ns</a> <a href="#galeria" style="font-size:14px;" class="navegacion2">Galeria</a><br /><br /></p></div></div>
+    
+    <hr align="center" width="825" noshade size="3px" style="color: #dd7a0f" />
+    
+    <div id="situacio"><div class="text"><p align="justify"><h1>● Situació</h1><br /><b><u>-Forn de pa o Obrador:</u></b> CRTA Camprodon nº3 darrere (davant de Ca la Nàsia), Vall de Bianya (17813) | La Garrotxa (Girona)<br /><br /><b><u>-Botiga o lloc de venda:</u></b> C/ Sastres nº1 (darrere l'Església de Sant Esteve), Olot (17800) | La Garrotxa (Girona). Aquí teniu un mapa (clic <a href="https://maps.google.es/maps/ms?msa=0&msid=213374698058965748914.0004da05596e0805dd32f&ie=UTF8&t=m&ll=42.182208,2.488028&spn=0.002783,0.00456&z=17&source=embed" target="_blank">AQUÍ</a> per veure'l més gran) i una fotografia per orientar-vos millor:<br /><br /></p></div><center><iframe width="280" height="280" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.es/maps/ms?msa=0&amp;msid=213374698058965748914.0004da05596e0805dd32f&amp;ie=UTF8&amp;t=m&amp;ll=42.182208,2.488028&amp;spn=0.002783,0.00456&amp;z=17&amp;output=embed"></iframe>&nbsp; &nbsp; &nbsp; &nbsp;<img src="botiga.png" width="280" height="280" style="border-radius: 10px;" /></center><div class="text"><p align="justify"><br /><br /><a href="#dins" style="font-size:14px;" class="navegacion2">Inici</a> <a href="#quisom" style="font-size:14px;" class="navegacion2">Qui som?</a> <a href="#contacte" style="font-size:14px;" class="navegacion2">Contacta'ns</a> <a href="#galeria" style="font-size:14px;" class="navegacion2">Galeria</a><br /><br /></p></div></div>
+    
+    <hr align="center" width="825" noshade size="3px" style="color: #dd7a0f" />
+    
+    <div id="contacte"><div class="text"><p align="justify"><h1>● Contacta'ns</h1><br />Per realitzar un encàrrec o per plantejar algun dubte, pots trucar a un d'aquests dos telèfons:<br /><br /><img src="telf.png" /><br /><br />També pots escriure'ns un e-mail a alguna de les següents adreces:<br /><br /><img src="mail.png" /><br /><br /></p></div>
+    <center><div class="text" style="font-size: 30px;"><p>Respondrem amb la màxima rapidesa possible!</p></div></center>
+    
+    <div class="text"><p align="justify"><br /><br /><br /><a href="#dins" style="font-size:14px;" class="navegacion2">Inici</a> <a href="#quisom" style="font-size:14px;" class="navegacion2">Qui som?</a> <a href="#situacio" style="font-size:14px;" class="navegacion2">Situació</a> <a href="#galeria" style="font-size:14px;" class="navegacion2">Galeria</a><br /><br /></p></div></div>
+    
+  <hr align="center" width="825" noshade size="3px" style="color: #dd7a0f" />  
+    
+    <div id="galeria"><div class="text"><p align="justify"><h1>● Galeria</h1>
+    
+    <div id="slidebox">
+<div class="next"></div>
+<div class="previous"></div>
+<div class="thumbs">
+<a href="#" onClick="" class="1 thumbActive">1</a> 
+<a href="#" onClick="" class="2">2</a> 
+<a href="#" onClick="" class="3 ">3</a> 
+<a href="#" onClick="" class="4">4</a> 
+</div>
+	<ul>
+    	<li><img src="galeria/IMG_1194.JPG" width="500" height="375" /></li>
+    	<li><img src="galeria/IMG_1198.JPG" width="500" height="375" /></li>
+    	<li><img src="galeria/IMG_1203.JPG" width="500" height="375" /></li>
+    	<li><img src="galeria/IMG_1209.JPG" width="500" height="375" /></li>
+	</ul>
+</div>
+
+<br /><a href="#dins" style="font-size:14px;" class="navegacion2">Inici</a> <a href="#quisom" style="font-size:14px;" class="navegacion2">Qui som?</a> <a href="#situacio" style="font-size:14px;" class="navegacion2">Situació</a> <a href="#contacte" style="font-size:14px;" class="navegacion2">Contacta'ns</a><br /><br /></p></div></div>
+
+<hr align="center" width="825" noshade size="3px" style="color: #dd7a0f" />
+
+<center><div class="text"><p>Disseny realitzat per <a href="http://pereayats.com" target="_blank">Pere Ayats</a> © 2013-2016</p></div></center>
+
+    
+    </div>
+  
+    </div>
+</body>
+</html>
